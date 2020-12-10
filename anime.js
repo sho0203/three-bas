@@ -15,20 +15,20 @@ function init() {
   var width = 100;
   var height = 60;
 
-var slide = new Slide(width, height, 'out');
-var l1 = new THREE.ImageLoader();
-l1.setCrossOrigin('Anonymous');
-l1.load('./img/retu.gif', function(img) {
-  slide.setImage(img);
-})
-  root.scene.add(slide);
+  var slide = new Slide(width, height, 'out');
+  var l1 = new THREE.ImageLoader();
+  l1.setCrossOrigin('Anonymous');
+  l1.load('./img/retu.gif', function(img) {
+    slide.setImage(img);
+  })
+    root.scene.add(slide);
 
-  var slide2 = new Slide(width, height, 'in');
-  var l2 = new THREE.ImageLoader();
-l2.setCrossOrigin('Anonymous');
-l2.load('./img/bunn.jpeg', function(img) {
-slide2.setImage(img);
-})
+    var slide2 = new Slide(width, height, 'in');
+    var l2 = new THREE.ImageLoader();
+  l2.setCrossOrigin('Anonymous');
+  l2.load('./img/bunn.jpeg', function(img) {
+  slide2.setImage(img);
+  })
 
   root.scene.add(slide2);
 
@@ -71,7 +71,7 @@ function Slide(width, height, animationPhase) {
   var maxDuration = 1.2;
   var maxDelayX = 0.9;
   var maxDelayY = 0.125;
-  var stretch = 0.11;
+  var stretch = 0.01;  //粒の大きさ
 
   this.totalDuration = maxDuration + maxDelayX + maxDelayY + stretch;
 
