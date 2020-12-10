@@ -1,0 +1,23 @@
+{
+  "name": "three-bas",
+  "version": "1.0.0",
+  "description": "ローカルサーバー立ち上げないと画像を読み込めません。",
+  "main": "anime.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sho0203/three-bas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sho0203/three-bas/issues"
+  },
+  "homepage": "https://github.com/sho0203/three-bas#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2"
+  }
+}

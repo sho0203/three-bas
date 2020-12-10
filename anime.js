@@ -71,7 +71,7 @@ function Slide(width, height, animationPhase) {
   var maxDuration = 1.2;
   var maxDelayX = 0.9;
   var maxDelayY = 0.125;
-  var stretch = 0.01;  //粒の大きさ
+  var stretch = 0.1;  //粒の大きさ
 
   this.totalDuration = maxDuration + maxDelayX + maxDelayY + stretch;
 
